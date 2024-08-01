@@ -12,7 +12,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('quartos.index') }}">Quartos</a>
                 </li>
@@ -22,19 +22,21 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#contact-section">Sobre</a>
                 </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
                 @auth
                 <li class="nav-item">
                     <a class="nav-link" href="/dashboard">Meus eventos</a>
                 </li>
                 <li class="nav-item">
-                    <form action="/logout" method="POST">
-                    @csrf
-                    <a href="/logout" 
-                        class="nav-link" 
-                        onclick="event.preventDefault();
-                        this.closest('form').submit();">
-                        Sair
-                    </a>
+                    <form action="/logout" method="POST" style="display: inline;">
+                        @csrf
+                        <a href="/logout" 
+                           class="nav-link" 
+                           onclick="event.preventDefault();
+                           this.closest('form').submit();">
+                           Sair
+                        </a>
                     </form>
                 </li>
                 @endauth
