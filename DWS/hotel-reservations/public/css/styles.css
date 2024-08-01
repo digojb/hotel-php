@@ -1,0 +1,48 @@
+.navbar-custom {
+    font-size: 1.2rem; /* Aumenta o tamanho da fonte */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona um leve sombreamento */
+    padding: 1rem; /* Aumenta o padding para dar mais espaço */
+}
+.testimonials {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}
+
+.testimonials .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.testimonials .card:hover {
+    transform: translateY(-10px);
+}
+
+.testimonials .card-title {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.testimonials .rating span {
+    color: gold;
+    font-size: 20px;
+}
+.contact-info {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}
+
+.contact-info .contact-details {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info .contact-details h4 {
+    margin-top: 0;
+}
+
+.contact-info .contact-details p {
+    margin: 5px 0;
+}
+
