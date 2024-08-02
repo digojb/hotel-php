@@ -4,7 +4,9 @@
     <div class="text-center">
         <h1>Lista de Quartos</h1>
     </div>
-    <a href="{{ route('quartos.create') }}" class="btn btn-success mb-3">Adicionar Quarto</a>
+    @auth
+        <a href="{{ route('quartos.create') }}" class="btn btn-success mb-3">Adicionar Quarto</a>
+    @endauth
     
     @if ($quartos->isEmpty())
         <div class="text-center mt-5">
@@ -26,7 +28,9 @@
                             <p class="card-text">Tipo: {{ $quarto->tipo }}</p>
                             <p class="card-text">Status: {{ $quarto->status }}</p>
                             <div class="mt-auto d-flex justify-content-between">
-                                <a href="{{ route('reservas.create', ['quarto_id' => $quarto->id]) }}" class="btn btn-success">Reservar</a>
+                                @auth
+                                    <a href="{{ route('reservas.create', ['quarto_id' => $quarto->id]) }}" class="btn btn-success">Reservar</a>
+                                @endauth
                                 <a href="{{ route('quartos.show', $quarto->id) }}" class="btn btn-primary">Ver Detalhes</a>
                             </div>
                         </div>

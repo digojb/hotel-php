@@ -16,4 +16,3 @@ class Quarto extends Model
         return $this->hasMany(Reserva::class);
     }
 }
-

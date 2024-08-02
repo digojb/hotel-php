@@ -26,9 +26,6 @@
             <ul class="navbar-nav ml-auto">
                 @auth
                 <li class="nav-item">
-                    <a class="nav-link" href="/dashboard">Meus eventos</a>
-                </li>
-                <li class="nav-item">
                     <form action="/logout" method="POST" style="display: inline;">
                         @csrf
                         <a href="/logout" 

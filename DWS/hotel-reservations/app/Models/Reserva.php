@@ -16,4 +16,3 @@ class Reserva extends Model
         return $this->belongsTo(Quarto::class);
     }
 }
-

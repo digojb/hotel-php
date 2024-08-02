@@ -50,6 +50,7 @@
             </div>
 
             <button type="submit" class="btn btn-primary">Salvar</button>
+            <a id="botao" href="{{ route('quartos.index') }}" class="btn btn-secondary">Voltar</a>
         </form>
     </div>
 
